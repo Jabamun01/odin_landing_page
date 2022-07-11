@@ -20,12 +20,26 @@ body {
     align-items: center;
 }
 
-.enforce-max-width {
-    max-width: 1200px;
+.header-logo {
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight: bold;
+}
+
+.header-links {
+    list-style-type: none;
+    display: flex;
+    gap: 36px;
+}
+
+.header-links a {
+    color: #e5e7eb;
+    text-decoration: none;
 }
 
 .hero-section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 36px;
@@ -51,9 +65,11 @@ body {
 .hero-image {
     background-color: #6d747d;
     height: 256px;
+    width: 498px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 0 0 auto;
 }
 
 .sign-up {
@@ -64,21 +80,91 @@ body {
     border: none;
     color: #f9faf8;
     margin: 12px 0;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
 }
 
-#header-logo {
-    font-size: 24px;
-    color: #f9faf8;
-    font-weight: bold;
+.random-heading {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    margin: 48px;
+    text-align: center;
 }
 
-#header-links {
-    list-style-type: none;
+.random-image-container {
     display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+    margin-bottom: 128px;
+}
+
+.random-image-box {
+    height: 168px;
+    width: 168px;
+    border: 4px solid #3882f6;
+    border-radius: 16px;
+}
+
+.random-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    max-width: 168px;
+}
+
+.random-image-text {
+    text-align: center;
+}
+
+.quote-container {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 128px 28%;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.quote-name {
+    font-size: 24px;
+    font-weight: bold;
+    align-self: flex-end;
+    margin-right: 36px;
+}
+
+.action-box {
+    background-color: #3882f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 96px 24%;
+    padding: 48px 96px;
+    color: #f9faf8;
+    border-radius: 12px;
     gap: 36px;
 }
 
-#header-links a {
-    color: #e5e7eb;
-    text-decoration: none;
+.action-text-box {
+    flex: 1 1 0;
+}
+
+.action-heading {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.action-button {
+    border: 1px solid #f9faf8;
+    flex: 0 0 auto;
 }
